@@ -33,9 +33,10 @@ npm run android:open    # открывает Android Studio → Build → Build 
 
 ## Документы проекта
 - [`GAME_SPEC.md`](GAME_SPEC.md) — утверждённая продуктовая спецификация игры Memory, правила и ограничения MVP.
+- [`GAME_SPEC_ADDENDUM.md`](GAME_SPEC_ADDENDUM.md) — уточнения по случайности, алгоритму и ошибкам бота, пакетной загрузке и обработке из��бражений.
 - [`CONVENTIONS.md`](CONVENTIONS.md) — правила разработки и протокол работы ИИ.
 - [`ARCHITECTURE.md`](ARCHITECTURE.md) — карта слоёв и потоков данных.
 - [`DECISIONS.md`](DECISIONS.md) — ADR и обоснования архитектурных решений.
 - [`PROGRESS.md`](PROGRESS.md) — текущее состояние разработки и следующие шаги.
 
-При начале нового чата передавайте `GAME_SPEC.md`, `CONVENTIONS.md`, `ARCHITECTURE.md`, `DECISIONS.md` и `PROGRESS.md`: вместе они дают продуктовые требования, правила работы, устройство проекта, принятые решения и актуальный статус.
+При начале нового чата передавайте `GAME_SPEC.md`, `GAME_SPEC_ADDENDUM.md`, `CONVENTIONS.md`, `ARCHITECTURE.md`, `DECISIONS.md` и `PROGRESS.md`: вместе они дают продуктовые требования, уточнения, правила работы, устройство проекта, принятые решения и актуальный статус.
