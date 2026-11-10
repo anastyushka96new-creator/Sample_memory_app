@@ -1,0 +1,8 @@
+#!/bin/sh
+# Коммит невозможен, пока не зелёные: типы, линтер, тесты и сборка.
+echo "pre-commit: запускаю npm run check ..."
+npm run check --silent || {
+  echo ""
+  echo "Коммит отменён: npm run check не прошёл. Исправьте ошибки выше."
+  exit 1
+}
