@@ -1,12 +1,11 @@
 # VibeApp — эталонный скелет
 
-Список задач с тегами: React + TypeScript + Vite, данные в localStorage, упаковка в Android через Capacitor.
-Это учебный каркас: логика минимальна, зато все ограждения против «божественных файлов», техдолга
-и галлюцинаций ИИ уже работают. Свою идею вы наращиваете срезами (см. `vibe-coding-rules-v3.md`).
+Список задач с тегами: React + TypeScript + Vite, данные в localStorage, упаковка в Android через Capacitor. Это учебный каркас: логика минимальна, зато ограждения против «божественных файлов», техдолга и галлюцинаций ИИ уже работают. Свою идею наращивайте срезами (см. `vibe-coding-rules-v3.md`).
 
 ## Первый запуск (Windows PowerShell)
 1. Установите Node.js 22 LTS и Git.
 2. В папке проекта:
+
 ```powershell
 git init            # если папка ещё не репозиторий
 npm install         # заодно включает pre-commit проверку
@@ -23,13 +22,20 @@ npm run dev         # открыть адрес из консоли
 
 ## Android
 Нужны Android Studio и JDK (ставятся вместе с Android Studio).
+
 ```powershell
 npx cap add android     # один раз: создаёт папку android/
 npm run android:sync    # сборка веба и копирование в Android-проект
 npm run android:open    # открывает Android Studio → Build → Build APK(s)
 ```
+
 `androidScheme: 'https'` в `capacitor.config.ts` менять после первого релиза нельзя.
 
-## Документы
-`CONVENTIONS.md` правила для ИИ · `ARCHITECTURE.md` карта · `DECISIONS.md` почему так ·
-`PROGRESS.md` где мы сейчас. Эти четыре файла вставляются в каждый новый чат с ИИ.
+## Документы проекта
+- [`GAME_SPEC.md`](GAME_SPEC.md) — утверждённая продуктовая спецификация игры Memory, правила и ограничения MVP.
+- [`CONVENTIONS.md`](CONVENTIONS.md) — правила разработки и протокол работы ИИ.
+- [`ARCHITECTURE.md`](ARCHITECTURE.md) — карта слоёв и потоков данных.
+- [`DECISIONS.md`](DECISIONS.md) — ADR и обоснования архитектурных решений.
+- [`PROGRESS.md`](PROGRESS.md) — текущее состояние разработки и следующие шаги.
+
+При начале нового чата передавайте `GAME_SPEC.md`, `CONVENTIONS.md`, `ARCHITECTURE.md`, `DECISIONS.md` и `PROGRESS.md`: вместе они дают продуктовые требования, правила работы, устройство проекта, принятые решения и актуальный статус.
